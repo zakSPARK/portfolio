@@ -17,15 +17,15 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -39,7 +39,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile_img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="{% static 'assets/img/profile_img.jpg' %}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Zacchaeus Akinwale</a></h1>
         <div class="social-links mt-3 text-center">
           <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -85,7 +85,7 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile_img.jpg" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/profile_img.jpg' %}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Data Science &amp; Human Capital Analytics</h3>
@@ -338,9 +338,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/BreathStore.png" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/BreathStore.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/BreathStore.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/BreathStore.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="https://app.powerbi.com/view?pageName=ReportSection5cc5b7fcaebcfb2b9139&r=eyJrIjoiZjQxOWYwNjYtNjk4YS00NDYxLWIxZmEtODMxYTNlNTgyYzBiIiwidCI6IjliN2MyZDllLWZlODAtNDA2NS04Zjk0LThhYTI2MDQ1NmY3YiJ9" title="View Visualization"><i class="bx bx-link"></i></a>
                 <a href="https://medium.com/futur-spark-blog/business-intelligence-analysis-on-breath-store-data-in-power-bi-42a59c3c1486" title="View Article"><i class="bx bx-link"></i></a>
               </div>
@@ -349,9 +349,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/FortzaPizza.png" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/FortzaPizza.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/FortzaPizza.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/FortzaPizza.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiODRjNmYwYjYtOTgzZC00ZTg0LWEwZTgtM2M5NTI5Nzc3ZDVhIiwidCI6IjliN2MyZDllLWZlODAtNDA2NS04Zjk0LThhYTI2MDQ1NmY3YiJ9" title="View Visualization"><i class="bx bx-link"></i></a>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiODRjNmYwYjYtOTgzZC00ZTg0LWEwZTgtM2M5NTI5Nzc3ZDVhIiwidCI6IjliN2MyZDllLWZlODAtNDA2NS04Zjk0LThhYTI2MDQ1NmY3YiJ9" title="View Visualization"><i class="bx bx-link"></i></a>
               </div>
@@ -360,9 +360,9 @@
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -370,9 +370,9 @@
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -380,9 +380,9 @@
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -448,9 +448,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/articles/datadrivenAugment.png" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/articles/datadrivenAugment.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/articles/datadrivenAugment.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/articles/datadrivenAugment.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="https://medium.com/futur-spark-blog/data-driven-design-thinking-and-analytics-9ceac2dfa7c1" title="View Article"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -458,9 +458,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/articles/habitomation.png" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/articles/habitomation.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/articles/habitomation.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/articles/habitomation.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="https://medium.com/futur-spark-blog/habitomation-and-products-that-command-attention-e0bf7ddda2d5" title="View Article"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -468,9 +468,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/articles/RelevanceFuture.png" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/articles/RelevanceFuture.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/articles/RelevanceFuture.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/articles/RelevanceFuture.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="https://medium.com/futur-spark-blog/relevance-in-the-future-of-work-359c2b7e8ab2" title="View Article"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -544,7 +544,7 @@
                   Zaccheaus is passionate about nation building and he’s an edTech enthusiast. He has demonstrated these through some strategy programmes and initiatives he has organized (with his team) in a bid to reduce the inequality in quality education. He is on to something great and I have no doubt that he’d clear the path for those coming behind him
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/01-Testimonial.jpg" class="testimonial-img" alt="">
+                <img src="{% static 'assets/img/testimonials/01-Testimonial.jpg' %}" class="testimonial-img" alt="">
                 <h3>Abayomi Akanji</h3>
                 <h4>Queen Elizabeth Young Fellow &amp; UCL Fellow</h4>
               </div>
@@ -557,7 +557,7 @@
                   I know Zacchaeus to be innovative, a relentless community builder, versatile, a polymath and efficient in Data Analytics. I also know him for his strategic insight to bridging the gap between Data Science and Human Capital Development. He will be an asset to any organisation he finds himself in.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/02-Testimonial.jpg" class="testimonial-img" alt="">
+                <img src="{% static 'assets/img/testimonials/02-Testimonial.jpg' %}" class="testimonial-img" alt="">
                 <h3>Mercy Akowe</h3>
                 <h4>Data Scientist & Snr. Content Manager</h4>
               </div>
@@ -570,7 +570,7 @@
                   Passionate about youth development/empowerment and dedicated to progressive/creative thinking, Mr. Zach (with his team) is preparing today's young minds for the future of work and raising a generation that will ultimately build the New Nigeria we are all working to see.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/03-Testimonial.jpg" class="testimonial-img" alt="">
+                <img src="{% static 'assets/img/testimonials/03-Testimonial.jpg' %}" class="testimonial-img" alt="">
                 <h3>Tolulop Ahmed</h3>
                 <h4>CEO ValuePlus Inc.</h4>
               </div>
@@ -583,7 +583,7 @@
                   Zacchaeus is a fantastic tech guy who is an expert in data analytics and all those machine learning related stuff. He is reliable and good at what he does.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/04-Testimonial.jpg" class="testimonial-img" alt="">
+                <img src="{% static 'assets/img/testimonials/04-Testimonial.jpg' %}" class="testimonial-img" alt="">
                 <h3>Timi Awesu</h3>
                 <h4>HR Manager (BitNob) &amp; Capacity Builder (Finesse Pro Consult)</h4>
               </div>
@@ -596,7 +596,7 @@
                   Zacchaeus Akinwale is a Go To expert in Business Intelligence and Data Analysis. He is always ready to help his team mates, and customers. Zacchaeus has always been very helpful, professional and a continuous learner.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/05-Testimonial.jpg" class="testimonial-img" alt="">
+                <img src="{% static 'assets/img/testimonials/05-Testimonial.jpg' %}" class="testimonial-img" alt="">
                 <h3>Stanley Igwe</h3>
                 <h4>Data Analytics Consultant (PWC)</h4>
               </div>
@@ -693,18 +693,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
